@@ -16,7 +16,13 @@
 }
 .cards__products h3 {
     text-align: center;
+    font-size: large;
 }
+.cards__products p {
+    text-align: center;
+    font-size: 12px;
+}
+
 .cards__products button{
     border: none;
     background-color: #DF0000;
@@ -27,5 +33,14 @@
 .cards__img{
     width: 130px;
     filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.49));
+    padding: 1rem;
     
+}
+#items {
+    display: flex;
+    flex-wrap: wrap;
+}
+#cart {
+    display: flex;
+    flex-wrap: wrap;
 }
