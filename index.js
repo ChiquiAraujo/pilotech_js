@@ -43,15 +43,15 @@ function addToCart(id){
 
     let productOnCart = cart.find((product) => product.id === id);
 
-    if (productOnCart) {
-        productOnCart.cantidad++; 
-    }
-    else {
+    function elsse () {
         product.cantidad = 1;
         cart.push(product);
     }
-    renderCart();
-    calculateTotal();
+    productOnCart ? productOnCart.cantidad++ : elsse ()
+    
+     renderCart();
+     calculateTotal(); 
+
 }
 
 //Carrito de la compra
@@ -66,7 +66,7 @@ function renderCart(){
             <p>${object.description}</p>  
             <b>${object.price}€</b>
             <p>Identificador: ${object.brand} ${object.id} </p> 
-            <p>Cantidad:${object.cantidad}</p>
+            <p>Cantidad: ${object.cantidad}</p>
             <button onclick="removeCart(${id})"> Eliminar</button>
         </div>
         `
@@ -85,6 +85,18 @@ function calculateTotal() {
     });
     console.log(total);
 
+    function botonComprar() {
+        let htmlboton = "";
+        htmlboton+=
+        `<div>
+        <button id="boton__comprar" onclick="location.href='./compra.html'" >Comprar</button>
+        </div>
+        `
+    accionHTML.innerHTML = htmlboton;
+    localStorage.setItem("cart", JSON.stringify(cart));
+    };
+
+   
     if (total > 1){
         function botonComprar() {
             let htmlboton = "";
@@ -110,10 +122,7 @@ function calculateTotal() {
 //Eliminar productos del carrito
 function removeCart (id){
     cart[id].cantidad--;
-
-    if(cart[id].cantidad === 0){
-        cart.splice(id, 1);
-    }
+    cart[id].cantidad === 0 ? cart.splice(id, 1) : "" 
     renderCart();
     calculateTotal ();    
 }
