@@ -134,14 +134,18 @@ function empyCart() {
     calculateTotal ();
     formHTML.innerHTML = "";
     accionHTML.innerHTML = "";
+    Swal.fire(
+        'Carrito vacio',
+      );
 }
 
 renderProduct();
 empy.addEventListener("click", empyCart);
 
+
+// redencizar las marcas
 const marcs = document.querySelector("#marcas");
 marcs.innerHTML =`
-<div id="marcas">
 <div>
   <img src="./img/branch/apple.svg" alt="">
 </div>
@@ -150,6 +154,5 @@ marcs.innerHTML =`
 </div>
 <div>
   <img src="./img/branch/xiaomi.svg" alt="">
-</div>
 </div>
 `;

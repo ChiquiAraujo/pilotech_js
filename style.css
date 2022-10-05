@@ -70,12 +70,13 @@ header {
     display: flex;
     justify-content: space-around;
     
+    
    
 }
 
 #marcas img {
     width: 175px;
     padding: 2rem;
-    align-content: center;
+    align-content: center;    
     
 }
