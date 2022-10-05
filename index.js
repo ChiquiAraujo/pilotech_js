@@ -9,7 +9,6 @@ const articles = [
 
 console.log(articles);
 
-
 const items = document.querySelector("#items");
 const cartHTML = document.querySelector("#cart");
 const formHTML = document.querySelector("#form");
@@ -139,5 +138,4 @@ function empyCart() {
 
 renderProduct();
 empy.addEventListener("click", empyCart);
-
 

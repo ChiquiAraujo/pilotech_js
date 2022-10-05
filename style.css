@@ -1,3 +1,6 @@
+body {
+    background-color: #F7F7F7 ;
+}
 
 .div__cards{
     background-color: #E4E4E4;
@@ -43,4 +46,36 @@
 #cart {
     display: flex;
     flex-wrap: wrap;
+}
+
+/* ---------- Header ----------*/
+header {
+    background-color: #E4E4E4;
+    display: flex;
+    justify-content: space-around;
+}
+
+.li__header{
+    color: black;
+    font-weight: bold;
+}
+
+.ico__menu{
+    width: 20px;
+}
+
+/* ---------- Marcas ----------*/
+
+#marcas {
+    display: flex;
+    justify-content: space-around;
+    
+   
+}
+
+#marcas img {
+    width: 175px;
+    padding: 2rem;
+    align-content: center;
+    
 }
