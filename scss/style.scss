@@ -1,10 +1,17 @@
+
+@import "utilities/mediasqueries";
+
 body {
     background-color: #F7F7F7 ;
 }
 
 .div__cards{
-    background-color: #E4E4E4;
-     
+    background-color: #E4E4E4;      
+}
+
+#items {
+    display: flex;
+    justify-content: center;
 }
 .cards__products{
     background-color: white;
@@ -28,9 +35,10 @@ body {
 
 .cards__products button{
     border: none;
-    background-color: #DF0000;
+    background-color: #EF7810;
     color: white;
     padding: 0.5rem;
+    margin-top: 2rem;
     border-radius: 10px;
 }
 .cards__img{
@@ -43,10 +51,7 @@ body {
     display: flex;
     flex-wrap: wrap;
 }
-#cart {
-    display: flex;
-    flex-wrap: wrap;
-}
+
 
 /* ---------- Header ----------*/
 header {
@@ -69,14 +74,52 @@ header {
 #marcas {
     display: flex;
     justify-content: space-around;
-    
-    
-   
+    flex-wrap: wrap;
+    align-content: center;
 }
 
 #marcas img {
-    width: 175px;
+    width: 200px;
     padding: 2rem;
     align-content: center;    
     
+}
+
+// Productos del carrito
+.cards__cart{
+    display: flex;    
+    align-items:center;
+    justify-content: space-between; 
+    background-color: #F4F4F4;
+    border-radius: 5px;
+    margin: 10px;
+    button{
+        border: none;
+        background-color: rgb(198, 192, 192);
+        border-radius: 3px;
+        color: white;
+        margin-right: 20px;
+        }
+        
+}
+#cart {    
+    display: flex;
+    flex-direction: column;
+    img {
+        width: 75px;
+    }
+    h3, p, b {
+        font-size: 12px;
+    }
+} 
+
+#pagebuy {    
+    display: flex;
+    flex-direction: column;
+    img {
+        width: 75px;
+    }
+    h3, p, b {
+        font-size: 12px;
+    }
 }

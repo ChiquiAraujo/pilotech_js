@@ -1,6 +1,136 @@
 [
-    {"id": 1, "brand": "Samsung", "name": "Samsung Galaxy S22", "price": 1359, "description": "5G, Black, 128 GB, 8 GB RAM, 6.1'' FHD+, Exynos 2200, 3700 mAh, Android 12", "img":"./img/galaxy_s22.png"},
-    {"id": 2, "brand": "Samsung", "name": "Samsung Galaxy Z Fold 4", "price": 1779, "description": "Características del movil Android Galaxy Z Fold 4", "img":"./img/galaxyfold.png"},
-    {"id": 3, "brand": "Apple", "name": "iPhone 14", "price": 1599, "description": "Características del movil iPhone 14", "img":"./img/iphone_14.png"},
-    {"id": 4, "brand": "Apple", "name": "iPhone 13 mini", "price": 879, "description": "Características del movil iPhone 13 mini", "img":"./img/iphone-13.png"}
+    {"id": 1,
+    "brand": "Samsung",
+    "name": "Samsung Galaxy S22",
+    "tipe": "movil",
+    "price": 1359,
+    "description": "5G, 128 GB, 8 GB RAM, 6.1'' FHD+, Exynos 2200, 3700 mAh, Android 12",
+    "img":"./img/articles/galaxy_s22.png"
+    },
+
+    {"id": 2,
+    "brand": "Samsung",
+    "name": "Samsung Galaxy Z Fold 4",
+    "tipe": "movil",
+    "price": 1779,
+    "description": "5G, 256 GB, 12 GB RAM, 7.6 QXGA+, SM8475 Octa-Core, 4400 mAh, Android 12",
+    "img":"./img/galaxyfold.png"
+    },
+
+    {"id": 3,
+    "brand": "Apple",
+    "name": "iPhone 14",
+    "tipe": "movil",
+    "price": 1599,
+    "description": "128 GB, 5G, 6.7', Pantalla Super Retina XDR, Chip A16 Bionic, iOS",
+    "img":"./img/articles/iphone_14.png"
+    },
+    
+    {"id": 4,
+    "brand": "Apple",
+    "name": "iPhone 13 mini",
+    "tipe": "movil",
+    "price": 879,
+    "description": "128 GB, 5G, 6.1', OLED Super Retina XDR, Chip A15 Bionic, iOS",
+    "img":"./img/articles/iphone-13.png"
+    },
+
+    {"id": 5,
+    "brand": "xiaomi",
+    "name": "Xiaomi 12T Pro",
+    "tipe": "movil",
+    "price": 849,
+    "description": "256 GB, 12 GB, 6.67'', QHD, Snapdragon 8+ Gen 1, 5000 mAh, Android",
+    "img":"./img/articles/xiaomi12t.png"
+    },
+
+    {"id": 6,
+    "brand": "xiaomi",
+    "name": "Xiaomi 12X",
+    "tipe": "movil",
+    "price": 499,
+    "description": "128 GB, 8 GB RAM, 6.55'', Full HD+, Qualcomm Snapdragon® 778G, 4300 mAh, Android",
+    "img":"./img/articles/xiaomi12x.png"
+    },
+    
+    {"id": 7,
+    "brand": "Samsung",
+    "name": "Samsung Galaxy TAB S8",
+    "tipe": "tablet",
+    "price": 649,
+    "description": "128 GB, Gris Oscuro, WiFi, 11 WQXGA, 8 GB RAM, SD™ 898, Android 12",
+    "img":"./img/articles/galaxy_tabs8.png"
+    },
+
+    {"id": 8,
+    "brand": "Apple",
+    "name": "IPad Pro",
+    "tipe": "tablet",
+    "price": 1449,
+    "description": "128 GB, Plata, 12.9', WiFi, Liquid Retina XDR, 8 GB RAM, Chip M2, iPadOS 16",
+    "img":"./img/articles/ipad.png"
+    },
+
+    {"id": 9,
+    "brand": "xiaomi",
+    "name": "Xiaomi Book S",
+    "tipe": "tablet",
+    "price": 643,
+    "description": "LCD, WiFi, 8cx Gen 2, 8GB de RAM, 256GB SSD, batería de 4920 mAh",
+    "img":"./img/articles/xiaomi_books.png"
+    },
+
+    {"id": 10,
+    "brand": "Samsung",
+    "name": "Galaxy Watch5",
+    "tipe": "watchs",
+    "price": 276,
+    "description": "Samsung Galaxy Watch5 BT 44mm, 1.4'', Exynos W920, 410 mAh, Gray",
+    "img":"./img/articles/galaxy5.png"
+    },
+
+    {"id": 11,
+    "brand": "Apple",
+    "name": "Apple Watch Ultra",
+    "tipe": "watchs",
+    "price": 999,
+    "description": "GPS , 49 mm, Caja de titanio, Cristal de zafiro, Correa Loop Trail Amarillo/Beis",
+    "img":"./img/articles/apple.png"
+    },
+
+    {"id": 12,
+    "brand": "xiaomi",
+    "name": "Xiaomi Watch S1 Active",
+    "tipe": "watchs",
+    "price": 146,
+    "description": "Xiaomi Watch S1 Active, 1.43'' AMOLED, Sensor de pulso, Bluetooth, WiFi, Space Black",
+    "img":"./img/articles/active.png"
+    },
+
+    {"id": 13,
+    "brand": "Samsung",
+    "name": "Galaxy Book2 Pro 360",
+    "tipe": "laptop",
+    "price": 1340,
+    "description": "15.6'' FHD, Intel® Evo™ Core™ i7‑1260P, 16 GB RAM, 512 GB SSD, W11HP",
+    "img":"./img/articles/galaxybookpro.png"
+    },
+
+    {"id": 14,
+    "brand": "Apple",
+    "name": "MacBook Air",
+    "tipe": "laptop",
+    "price": 1089,
+    "description": "13.3'' Retina, Chip M1 de Apple, 8 GB, 256 GB SSD, MacOS, Magic Keyboard Touch ID, Gris espacial",
+    "img":"./img/articles/imac.png"
+    },
+
+    {"id": 15 ,
+    "brand": "xiaomi",
+    "name": "Realme Book Prime",
+    "tipe": "laptop",
+    "price": 862,
+    "description": "14'' QHD, Intel® Core™ i5-11320H, 16GB RAM, 512GB SSD, Iris® Xe Graphics, Windows 11 Home",
+    "img":"./img/articles/laptopxiaomi.png"
+    }
 ]

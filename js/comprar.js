@@ -7,13 +7,11 @@ console.log(datos);
 function renderCart2(){
     datos.forEach((objeto) => {
         let cartsHTML = `
-        <div class="cards__products">
-            <img src="${objeto.img}" alt="${objeto.name}" class="cards__img">
+        <div class="cards__cart">
+            <img src=".${objeto.img}" alt="${objeto.name}" class="cards__img">
             <h3 class="modelo">${objeto.name}</h3>           
-            <p>${objeto.description}</p>  
-            <b>${objeto.price}€</b>
-            <p>Identificador: ${objeto.brand} ${objeto.id} </p> 
             <p>Cantidad:${objeto.cantidad}</p>
+            <b>${objeto.price}€</b>            
         </div>
         `;
         cart2.innerHTML += cartsHTML;

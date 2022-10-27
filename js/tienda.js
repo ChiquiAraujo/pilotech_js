@@ -10,7 +10,7 @@ let cart = [];
 // Para dejar productos en el carrito
 
  const renderProduct = async () => {
-    const response = await fetch("./articles.json");
+    const response = await fetch("../articles.json");
     articles = await response.json();
     console.log(articles);
     let itemsDom = document.getElementById("items");
@@ -19,11 +19,10 @@ let cart = [];
         console.log(items);
         productHTML = `
         <div class="cards__products">
+        <img src=".${product.img}" alt="${product.name}" class="cards__img">
         <h3>${product.name}</h3>
-        <img src="${product.img}" alt="${product.name}" class="cards__img">
         <p>${product.description}</p>
-        <b>${product.price}€</b>
-        <p>Identificador: ${product.brand} ${product.id} </p> 
+        <b>${product.price}€</b>        
         <button onclick="addToCart(${product.id})"> Añadir al carrito  </button>
         </div>
         `;
@@ -52,13 +51,11 @@ function renderCart(){
 
     cart.forEach((object, id) => {
         htmlCart+= `
-        <div class="cards__products">
-            <img src="${object.img}" alt="${object.name}" class="cards__img">
-            <h3 class="modelo">${object.name}</h3>           
-            <p>${object.description}</p>  
-            <b>${object.price}€</b>
-            <p>Identificador: ${object.brand} ${object.id} </p> 
+        <div class="cards__cart">
+            <img src=".${object.img}" alt="${object.name}" class="cards__img">
+            <h3 class="modelo">${object.name}</h3>      
             <p>Cantidad: ${object.cantidad}</p>
+            <b>${object.price}€</b>           
             <button onclick="removeCart(${id})"> Eliminar</button>
         </div>
         `
@@ -80,7 +77,7 @@ function calculateTotal() {
         let htmlboton = "";
         htmlboton+=
         `<div>
-        <button id="boton__comprar" onclick="location.href='./compra.html'" >Comprar</button>
+        <button id="boton__comprar" onclick="location.href='../pages/compra.html'" >Comprar</button>
         </div>
         `
     accionHTML.innerHTML = htmlboton;
@@ -92,7 +89,7 @@ function calculateTotal() {
             let htmlboton = "";
             htmlboton+=
             `<div>
-            <button id="boton__comprar" onclick="location.href='./compra.html'" >Comprar</button>
+            <button id="boton__comprar" onclick="location.href='../pages/compra.html'" >Comprar</button>
             </div>
             `
         accionHTML.innerHTML = htmlboton;
@@ -115,6 +112,12 @@ function removeCart (id){
     calculateTotal ();    
 }
 
+
+
+renderProduct();
+empy.addEventListener("click", empyCart);
+
+
 // Vaciar el carrito
 
 function empyCart() {
@@ -126,21 +129,5 @@ function empyCart() {
     Swal.fire(
         'Carrito vacio',
       );
-}
+};
 
-renderProduct();
-empy.addEventListener("click", empyCart);
-
-// redencizar las marcas
-const marcs = document.querySelector("#marcas");
-marcs.innerHTML =`
-<div>
-  <img src="./img/branch/apple.svg" alt="">
-</div>
-<div>
-  <img src="./img/branch/samsung.svg" alt="">
-</div>
-<div>
-  <img src="./img/branch/xiaomi.svg" alt="">
-</div>
-`;

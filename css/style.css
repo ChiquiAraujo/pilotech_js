@@ -1,0 +1,99 @@
+body {
+  background-color: #F7F7F7; }
+
+.div__cards {
+  background-color: #E4E4E4; }
+
+#items {
+  display: flex;
+  justify-content: center; }
+
+.cards__products {
+  background-color: white;
+  width: 300px;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 19px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.75rem;
+  margin: 1rem; }
+
+.cards__products h3 {
+  text-align: center;
+  font-size: large; }
+
+.cards__products p {
+  text-align: center;
+  font-size: 12px; }
+
+.cards__products button {
+  border: none;
+  background-color: #EF7810;
+  color: white;
+  padding: 0.5rem;
+  margin-top: 2rem;
+  border-radius: 10px; }
+
+.cards__img {
+  width: 130px;
+  filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.49));
+  padding: 1rem; }
+
+#items {
+  display: flex;
+  flex-wrap: wrap; }
+
+/* ---------- Header ----------*/
+header {
+  background-color: #E4E4E4;
+  display: flex;
+  justify-content: space-around; }
+
+.li__header {
+  color: black;
+  font-weight: bold; }
+
+.ico__menu {
+  width: 20px; }
+
+/* ---------- Marcas ----------*/
+#marcas {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap; }
+
+#marcas img {
+  width: 200px;
+  padding: 2rem;
+  align-content: center; }
+
+.cards__cart {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #F4F4F4;
+  border-radius: 5px;
+  margin: 10px; }
+  .cards__cart button {
+    border: none;
+    background-color: #c6c0c0;
+    border-radius: 3px;
+    color: white;
+    margin-right: 20px; }
+
+#cart {
+  display: flex;
+  flex-direction: column; }
+  #cart img {
+    width: 75px; }
+  #cart h3, #cart p, #cart b {
+    font-size: 12px; }
+
+#pagebuy {
+  display: flex;
+  flex-direction: column; }
+  #pagebuy img {
+    width: 75px; }
+  #pagebuy h3, #pagebuy p, #pagebuy b {
+    font-size: 12px; }

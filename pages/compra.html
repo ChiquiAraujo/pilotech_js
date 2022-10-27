@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../img/SVG/logo.svg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Carrito</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar navbar-expand-lg nav__color">
+            <div class="container-fluid">
+             <a class="navbar-brand" href="../index.html"><img class="header__logo" src="../img/logo.svg" alt="logo"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ul__header">
+                  <li class="nav-item li__header">
+                    <a class="nav-link " href="../pages/tienda.html">Tienda</a>
+                  </li>   
+                  <li class="nav-item li__header">
+                    <a class="nav-link " href="#">Marcas</a>                    
+                  </li>
+                  <li class="nav-item li__header">
+                    <a class="nav-link " href="#">Dispositivos</a>
+                  </li> 
+                  <li>
+                    <a class="navbar-brand" href="../pages/compra.html"><img class="ico__menu" src="../img/SVG/cart.svg" alt="logo"></a>
+                  </li>                                                 
+                </ul>          
+                <a class="navbar-brand" href="../index.html"></a>          
+              </div>
+            </div>
+          </nav>
+      </header> 
+    
+
+    <div id="pagebuy">
+    </div>
+    <div id="totalcompra"></div>
+
+    <button id="pay"> Pagar </button>
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../js/comprar.js"></script>
+</body>
+</html>

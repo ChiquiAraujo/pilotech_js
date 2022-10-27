@@ -1,6 +1,0 @@
-[
-    {"id": 1, "brand": "Samsung", "name": "Samsung Galaxy S22", "price": 1359, "description": "5G, Black, 128 GB, 8 GB RAM, 6.1'' FHD+, Exynos 2200, 3700 mAh, Android 12", "img":"./img/galaxy_s22.png"},
-    {"id": 2, "brand": "Samsung", "name": "Samsung Galaxy Z Fold 4", "price": 1779, "description": "Características del movil Android Galaxy Z Fold 4", "img":"./img/galaxyfold.png"},
-    {"id": 3, "brand": "Apple", "name": "iPhone 14", "price": 1599, "description": "Características del movil iPhone 14", "img":"./img/iphone_14.png"},
-    {"id": 4, "brand": "Apple", "name": "iPhone 13 mini", "price": 879, "description": "Características del movil iPhone 13 mini", "img":"./img/iphone-13.png"}
-]
