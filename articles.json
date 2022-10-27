@@ -132,5 +132,15 @@
     "price": 862,
     "description": "14'' QHD, Intel® Core™ i5-11320H, 16GB RAM, 512GB SSD, Iris® Xe Graphics, Windows 11 Home",
     "img":"./img/articles/laptopxiaomi.png"
+    },
+
+    {"id": 16 ,
+    "brand": "xiaomi",
+    "name": "Realme Book Prime",
+    "tipe": "laptop",
+    "price": 862,
+    "description": "14'' QHD, Intel® Core™ i5-11320H, 16GB RAM, 512GB SSD, Iris® Xe Graphics, Windows 11 Home",
+    "img":"./img/articles/laptopxiaomi.png"
     }
+
 ]
